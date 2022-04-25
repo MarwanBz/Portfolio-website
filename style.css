@@ -1,0 +1,77 @@
+/*!Globale rules  */
+:root {
+  --primary-color: #95BAE7;
+  --primary-light: #b0d0f7;
+  --secondary-dark: #585858;
+  --secondary-dark: #8a8a8a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  font-family: Arial;
+  overflow-x: hidden;
+  overflow-x: hidden;
+}
+
+/* !start of header */
+
+
+/* !end of header */
+
+/* *start of landing  */
+
+
+/* *end of landing */
+
+/* todo start of services */
+
+/* todo end of services */
+
+/* !start of portfolio */
+
+
+/*!end of portfolio */
+
+/* !start of other projects */
+
+
+/* !end of other projects */
+
+/* !start of contact */
+
+
+/* !end of other contact */
+
+/* !start of footer */
+
+
+/* !end of footer */
+
+/* !media queries */
+/* ?Tablets and under */
+@media (max-width: 768px) {}
+
+/* ?Mobile */
+@media (max-width: 500px) {}
+
+
+
+/* !End of media queries */
