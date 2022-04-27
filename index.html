@@ -17,7 +17,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">
   <!-- !swiperJS  -->
   <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" /> -->
-  <title>Marwan Baz</title>
+  <title>Marwan Baz | FrontEnd Developer</title>
 </head>
 
 <body>
@@ -25,14 +25,19 @@
   <header class="header">
     <div class="container">
       <div class="logo"><a href=""><span>Marwan</span> Baz</a></div>
-      <div class="nav">
-        <ul>
+      <nav class="nav">
+        <ul class="nav-links">
           <li><a class="active" href="#">Home</a></li>
           <li><a href="#">Services</a></li>
           <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a class="contact" href="#">Contact</a></li>
         </ul>
-      </div>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      <nav />
     </div>
   </header>
 
@@ -59,21 +64,21 @@
     <div class="container swiper">
       <h1 class="section-title">“What I Do”</h1>
       <div class="services swiper-wrapper">
-        <i class="fa-solid fa-angle-left change-card"></i>
-        <i class="fa-solid fa-angle-right change-card"></i>
-        <div class="service serv1 swiper-slide">
+        <!-- <i class="fa-solid fa-angle-left change-card"></i>
+        <i class="fa-solid fa-angle-right change-card"></i> -->
+        <div class="service serv1">
           <i><img src="./assets/paint.png" alt=""></i>
           <h3>DESIGN</h3>
           <p>
             Clean, modern designs - optimized for the modern web, and converting users to customers.</p>
         </div>
-        <div class="service serv2 swiper-slide">
+        <div class="service serv2">
           <i><img src="./assets/web-development.png" alt=""></i>
           <h3>DEVELOPMENT</h3>
           <p>Building
             optimized websites for performance, search engines, and with modern industry technologies. </p>
         </div>
-        <div class="service serv3 swiper-slide">
+        <div class="service serv3">
           <i><img src="./assets/Path 1801.png" alt=""></i>
           <h3>MOBILE-FRIENDLY</h3>
           <p>A responsive design makes your website accessible to all users, regardless of their device.</p>
@@ -276,9 +281,9 @@
     </div>
   </footer>
 
-
+<script src="js/script.js"></script>
   <!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
-  <script src="script.js"></script>
+  
 </body>
 
 </html>
