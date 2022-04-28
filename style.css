@@ -185,7 +185,7 @@ header .container .nav .burger {
   border-radius: 30px;
   text-align: center;
   font-size: 16px;
-  box-shadow: 0 4px 12px #A4AEFF;
+  box-shadow: 0 4px 12px var(--primary-dark);
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
@@ -294,7 +294,7 @@ h3 {
 .serv3 p,
 .serv4 p,
 .serv5 p {
-  width: 50%;
+  width: 70%;
 }
 
 /* todo end of services */
@@ -447,8 +447,16 @@ h3 {
     flex-direction: row;
     justify-content: space-evenly;
   }
-  .landing {
-    /* height: 100vh; */
+  /* .landing {
+    /* height: 100vh; 
+  } */
+
+  /* !end of landing */
+
+  /* start of services */
+
+  section .container .services .serv3 {
+    grid-column: auto !important;
   }
 }
 
@@ -468,11 +476,12 @@ h3 {
   .container {
     width: 1170px;
   }
+  
 }
 @media (max-width: 1199px) {
-  /* section .container .services .serv3 {
-    grid-column: span 2;
-  } */
+  section .container .services .serv3 {
+    grid-column: 2 span ;
+  }
 }
 
 
