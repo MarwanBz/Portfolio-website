@@ -357,10 +357,78 @@ section .container .project-section .project-details .tech ul li i {
   font-size: 30px;
 }
 
-/*!end of portfolio */
 
 /* !start of other projects */
+section .container .other-projects .project-cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  position: relative;
+}
 
+section .container .other-projects .project-cards .card-1,
+.card-2,
+.card-3,
+.card-4,
+.card-5,
+.card-6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+  background-color: #F3F3F3;
+  height: 100%;
+  padding: 30px 20px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px rgb(0 0 0 / 0.16);
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+
+section .container .other-projects .project-cards .hover:hover {
+  transform: translateY(-7px);
+  transition: all 0.2s ease-in-out;
+}
+
+section .container .other-projects .project-cards p {
+  text-align: center;
+  line-height: 1.8;
+  padding: 20px 0;
+}
+
+section .container .other-projects .project-cards p+div {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+section .container .other-projects .project-cards p+div a {
+  margin-left: 10px;
+}
+
+section .container .other-projects .project-cards p+div a i:hover {
+  color: var(--primary-color);
+  transition: all 0.2s linear;
+}
+
+section .container .other-projects .project-cards p+div a i {
+  font-size: 20px;
+  color: #585858;
+  transition: all 0.3s ease-in-out;
+}
+
+section .container .div-btn {
+  margin-top: 20px;
+  text-align: center;
+}
+
+section .container .div-btn .primary-btn a {
+  color: #fff;
+}
 
 /* !end of other projects */
 
@@ -557,7 +625,6 @@ section .container .project-section .project-details .tech ul li i {
   section .container .project-section .project-details .tech  {
     width: 100%;
   }
-
 
   /* end of projects queries */
 }
