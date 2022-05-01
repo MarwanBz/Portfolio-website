@@ -30,6 +30,7 @@ body {
 }
 
 .container {
+  /* overflow-x: hidden; */
   padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
@@ -600,6 +601,10 @@ footer .container .social a:nth-last-child(3):hover {
 }
 
 @media (max-width: 767px) {
+
+  body {
+      overflow-x: hidden;
+  }
   header .container {
     flex-direction: column;
     min-height: 90px;
@@ -609,6 +614,7 @@ footer .container .social a:nth-last-child(3):hover {
 @media (max-width: 600px) {
   body {
     font-size: 13px;
+    /* overflow-x: hidden; */
   }
 
   header {
@@ -623,8 +629,8 @@ footer .container .social a:nth-last-child(3):hover {
     font-size: 20px;
   }
 
-  header .container nav ul li {
-    /* display: none; */
+  header .container .nav {
+    overflow-x: hidden;
   }
 
   header .container .nav .nav-links li {
@@ -632,6 +638,7 @@ footer .container .social a:nth-last-child(3):hover {
   }
 
   header .container .nav ul.nav-links {
+    display: none;
     position: absolute;
     right: 0;
     height: 90vh;
@@ -639,7 +646,7 @@ footer .container .social a:nth-last-child(3):hover {
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     background-color: rgba(255, 255, 255, 0.466);
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     align-items: center;
     width: 100%;
@@ -655,6 +662,8 @@ footer .container .social a:nth-last-child(3):hover {
 
   header .container .nav ul.nav-active {
     transform: translateX(0%);
+    display: flex;
+    transition: all 0.5s ease-in-out;
   }
 
   header .container .nav .burger {
