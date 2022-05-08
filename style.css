@@ -119,7 +119,7 @@ header .container .nav ul li a.contact:hover {
   color: #fff;
 }
 
-.active::before {
+li.active::before {
   content: '';
   height: 3px;
   width: 100%;
@@ -535,10 +535,11 @@ footer {
 footer .container {
   text-align: center;
   color: var(--secondary-dark);
-  padding: var(--section-padding) ;
-  height: 400px;
+  padding: var(--section-padding);
+  height: 450px;
   position: relative;
   width: 100%;
+  padding-bottom: 0;
 }
 
 footer .container .rights {
@@ -610,8 +611,9 @@ footer .container .social a:nth-last-child(3):hover {
 @media (max-width: 767px) {
 
   body {
-      overflow-x: hidden;
+    overflow-x: hidden;
   }
+
   header .container {
     flex-direction: column;
     min-height: 90px;
