@@ -150,7 +150,7 @@ header .container .nav .burger {
 .landing {
   width: 100vw;
   background-image: url(./assets/landing.svg);
-  max-height: calc(100vh - 82px);
+  /* max-height: calc(100vh - 82px); */
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-background-size: cover;
@@ -326,6 +326,9 @@ section .container .project-section:nth-child(3) {
   flex-direction: row-reverse;
 }
 
+section .container .project-section a {
+  text-align: center;
+}
 section .container .project-section a img {
   width: 95%;
   border-radius: 10px;
