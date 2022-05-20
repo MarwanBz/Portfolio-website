@@ -348,6 +348,13 @@ section .container .project-section .project-details {
   align-items: center;
 }
 
+section .container .project-section .project-details p+div a {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
 section .container .project-section .project-details p {
   width: 50%;
   line-height: 1.8;
@@ -777,11 +784,11 @@ footer .container .social a:nth-last-child(3):hover {
     order: 2;
   }
 
-  section .container .project-section .project-details p+div button:nth-child(1) {
+  section .container .project-section .project-details p+div a:nth-child(1) {
     flex-grow: 1.5;
   }
 
-  section .container .project-section .project-details p+div button:nth-child(2) {
+  section .container .project-section .project-details p+div a:nth-child(2) {
     flex-grow: 1.5;
   }
 
