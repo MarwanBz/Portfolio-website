@@ -236,7 +236,7 @@ header .container .nav .burger {
 }
 
 .landing .container .landing-right .svg {
-  background-image: url(./assets/web-development-bw.svg);
+  background-image: url(../assets/web-development-bw.svg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 600px;
