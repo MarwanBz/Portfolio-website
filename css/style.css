@@ -149,7 +149,7 @@ header .container .nav .burger {
 /* *start of landing  */
 .landing {
   width: 100vw;
-  background-image: url(./assets/landing.svg);
+  background-image: url(../assets/landing.svg);
   /* max-height: calc(100vh - 82px); */
   background-repeat: no-repeat;
   background-size: cover;
