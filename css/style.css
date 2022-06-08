@@ -661,11 +661,11 @@ footer .container .social a:nth-last-child(3):hover {
     position: absolute;
     right: 0;
     height: 90vh;
-    top: 90px;
+    top: 85px;
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     background-color: rgba(255, 255, 255, 0.466);
-    /* display: flex; */
+    display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
@@ -681,8 +681,6 @@ footer .container .social a:nth-last-child(3):hover {
 
   header .container .nav ul.nav-active {
     transform: translateX(0%);
-    display: flex;
-    transition: all 0.5s ease-in-out;
   }
 
   header .container .nav .burger {
@@ -837,7 +835,7 @@ footer .container .social a:nth-last-child(3):hover {
 
 /* *start of animations */
 
-@keyframes navfade {
+@keyframes navLinkFade {
   from {
     opacity: 0;
     transform: translateX(80px);
