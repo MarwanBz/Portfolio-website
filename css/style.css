@@ -30,7 +30,6 @@ body {
 }
 
 .container {
-  /* overflow-x: hidden; */
   padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
@@ -204,7 +203,7 @@ header .container .nav .burger {
 }
 
 .primary-btn:hover {
-  transform: scale(.98) translateY(-1px);
+  transform: scale(.98);
 }
 
 .primary-btn:active {
@@ -219,14 +218,12 @@ header .container .nav .burger {
   border: 0;
   padding: 10px 20px;
   border-radius: 30px;
-  /* margin-left: 20px; */
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   font-size: 13px;
 }
 
 .secondary-btn:hover {
-  transform: translateY(3px);
   transform: scale(0.98);
 }
 

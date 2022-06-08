@@ -49,8 +49,8 @@
           I build and design websites
         </p>
         <div class="btn-landing">
-          <button class="primary-btn">Need a website</button>
-          <button class="secondary-btn">My work</button>
+          <a href="#contact" class="primary-btn">Need a website</a>
+          <a href="#portfolio" class="secondary-btn">My work</a>
         </div>
       </div>
       <div class="landing-right">
@@ -231,7 +231,7 @@
         <form name="contact" method="POST" data-netlify="true">
           <div>
             <label for="" class="placeholder">Name</label>
-            <input type="text">
+            <input type="text" name="name">
             <svg class="line-svg" width="700" height="2" viewBox="0 0 700 2" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path class="elastic-line"
@@ -241,7 +241,7 @@
           </div>
           <div>
             <label for="" class="placeholder">Email</label>
-            <input type="text">
+            <input type="email" name="email">
             <svg class="line-svg" width="700" height="2" viewBox="0 0 700 2" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path class="elastic-line"
@@ -251,7 +251,7 @@
           </div>
           <div>
             <label for="" class="placeholder">Message</label>
-            <input type="textarea">
+            <input type="textarea" name="message">
             <svg class="line-svg" width="700" height="2" viewBox="0 0 700 2" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path class="elastic-line"
@@ -259,7 +259,7 @@
                 stroke="#585858" stroke-width="2" />
             </svg>
           </div>
-        <button class="primary-btn">Submit</button>
+        <button type="submit" class="primary-btn">Submit</button>
 
         </form>
         <!-- <button class="primary-btn">Submit</button> -->
