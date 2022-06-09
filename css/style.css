@@ -42,10 +42,13 @@ header {
   position: sticky;
   top: 0;
   z-index: 99999999;
-  /* backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px); */
   background-color: rgba(255, 255, 255, 0.92);
   position: -webkit-sticky;
+  transition: padding 300ms ease;
+}
+
+header.sticky {
+  padding: 10px 0px;
 }
 
 header .container {
@@ -326,6 +329,7 @@ section .container .project-section:nth-child(3) {
 section .container .project-section a {
   text-align: center;
 }
+
 section .container .project-section a img {
   width: 95%;
   border-radius: 10px;
@@ -606,10 +610,6 @@ footer .container .social a:nth-last-child(3):hover {
 /* Small */
 @media (min-width: 768px) {
 
-  body {
-    /* overflow-x: hidden; */
-  }
-
   .container {
     width: 750px;
   }
@@ -630,11 +630,14 @@ footer .container .social a:nth-last-child(3):hover {
 @media (max-width: 600px) {
   body {
     font-size: 13px;
-    /* overflow-x: hidden; */
   }
 
   header {
     padding: 0;
+  }
+
+  header.sticky {
+    padding: 5px 0px;
   }
 
   header .container {
