@@ -9,6 +9,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 *,
@@ -26,7 +27,10 @@ html {
 
 body {
   font-family: Arial;
-  overflow-x: hidden;
+}
+
+p {
+  color: var(--secondary-dark);
 }
 
 .container {
@@ -44,11 +48,12 @@ header {
   z-index: 99999999;
   background-color: rgba(255, 255, 255, 0.92);
   position: -webkit-sticky;
-  transition: padding 300ms ease;
+  transition: all 300ms ease;
 }
 
 header.sticky {
   padding: 10px 0px;
+  box-shadow: 0px 5px 20px rgb(0 0 0 / 8%);
 }
 
 header .container {
@@ -264,7 +269,6 @@ section .container h1.section-title {
 }
 
 section .container .services {
-  /* display: flex; */
   display: -ms-grid;
   display: grid;
   -ms-grid-column: repeat(3, auto);
@@ -499,6 +503,7 @@ section .container .form-container form div {
 }
 
 section .container .form-container form div input {
+  color: var(--secondary-light);
   border: 0;
   width: 100%;
   background-color: transparent;
@@ -512,10 +517,15 @@ section .container .form-container form div input {
 }
 
 section .container .form-container form label {
-  position: absolute;
   pointer-events: none;
   color: var(--primary-dark);
   top: 5px;
+}
+
+.placeholder {
+  position: absolute;
+  top: 5px;
+  transform-origin: left;
 }
 
 section .container .form-container form .primary-btn {
@@ -526,8 +536,12 @@ section .container .form-container form .primary-btn {
 section .container .form-container form .line-svg {
   background-color: var(--secondary-dark);
   max-width: 100%;
+  overflow: visible;
 }
 
+/* .line-svg {
+  height: 9px;
+} */
 section .container .form-container img {
   position: absolute;
   left: -30px;
@@ -638,6 +652,11 @@ footer .container .social a:nth-last-child(3):hover {
 
   header.sticky {
     padding: 5px 0px;
+  }
+
+  /* all H3 */
+  h3 {
+    font-size: 16px;
   }
 
   header .container {

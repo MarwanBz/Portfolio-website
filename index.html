@@ -15,8 +15,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">
-  <!-- !swiperJS  -->
-  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" /> -->
   <title>Marwan Baz | FrontEnd Developer</title>
 </head>
 
@@ -140,7 +138,7 @@
         </div>
       </div>
       <div class="project-section">
-        <a href="#">
+        <a href="https://marwanbz.github.io/Planty/">
           <img src="./assets/planty.png" alt="img">
         </a>
         <div class="project-details">
@@ -229,9 +227,9 @@
         <h1>Contact Me</h1>
         <p>Let's Work Together</p>
         <form name="contact" method="POST" data-netlify="true">
-          <div>
+          <div class="input-container">
             <label for="" class="placeholder">Name</label>
-            <input type="text" name="name">
+            <input type="text" name="name" class="input">
             <svg class="line-svg" width="700" height="2" viewBox="0 0 700 2" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path class="elastic-line"
@@ -239,9 +237,9 @@
                 stroke="#585858" stroke-width="2" />
             </svg>
           </div>
-          <div>
+          <div class="input-container">
             <label for="" class="placeholder">Email</label>
-            <input type="email" name="email">
+            <input type="email" name="email" class="input">
             <svg class="line-svg" width="700" height="2" viewBox="0 0 700 2" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path class="elastic-line"
@@ -249,9 +247,9 @@
                 stroke="#585858" stroke-width="2" />
             </svg>
           </div>
-          <div>
+          <div class="input-container">
             <label for="" class="placeholder">Message</label>
-            <input type="textarea" name="message">
+            <input type="textarea" name="message" class="input">
             <svg class="line-svg" width="700" height="2" viewBox="0 0 700 2" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path class="elastic-line"
@@ -286,8 +284,12 @@
     </div>
   </footer>
 
+  <!-- !GsapJS  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+    integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
   <script src="js/script.js"></script>
-  <!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
 
 </body>
 
